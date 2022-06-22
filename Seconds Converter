@@ -1,0 +1,11 @@
+# This program will take an input amount of seconds from the user and convert it into an hour, minute, second format.
+
+secondsStr = input("How many seconds do you want to convert?")
+seconds = int(secondsStr)
+
+hours = seconds // 3600
+secondsRemaining = seconds % 3600
+minutes = secondsRemaining // 60
+secondsStillRemaining = minutes % 60
+
+print("Hours:", hours, "Minutes:", minutes, "Seconds:", secondsStillRemaining)

@@ -1,9 +1,9 @@
 #this timer assumes a 24 hour time format, and prints the hour of the timer's expiration
 
-time_str = input("What hour is it?")
+time_str = input("What hour is it? ")
 time = int(time_str)
 
-wait_str = input("How many hours do you want the timer set for?")
+wait_str = input("How many hours do you want the timer set for? ")
 wait = int(wait_str)
 
 newTime = (time + wait) % 24

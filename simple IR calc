@@ -1,0 +1,9 @@
+#basic interest rate calculator 
+
+initialMonies = int(input("How much will you initially deposit? "))
+yearsWaiting = int(input("How many years will you let your deposit grow? "))
+interestRate = int(input("What interest rate do you want to assume? "))
+compoundFreq = int(input("How many times per year does the interest compound? "))
+
+finalAmount = initialMonies * (1 + (interestRate / 100 / compoundFreq)) ** (compoundFreq * yearsWaiting)
+print("Your final amount is", finalAmount)

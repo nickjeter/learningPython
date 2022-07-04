@@ -6,6 +6,6 @@ seconds = int(secondsStr)
 hours = seconds // 3600
 secondsRemaining = seconds % 3600
 minutes = secondsRemaining // 60
-secondsStillRemaining = minutes % 60
+secondsStillRemaining = secondsRemaining % 60
 
 print("Hours:", hours, "Minutes:", minutes, "Seconds:", secondsStillRemaining)
